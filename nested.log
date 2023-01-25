@@ -2,3 +2,9 @@ INFO:root:RESTARTED
 WARNING:root:Device Waschmaschiene failed with error module 'watchhen' has no attribute 'failed'
 INFO:root:RESTARTED
 WARNING:root:Device Waschmaschiene failed with error division by zero
+INFO:root:RESTARTED
+WARNING:root:Device Waschmaschiene failed with error division by zero
+INFO:root:RESTARTED
+WARNING:root:Device Waschmaschiene failed with error division by zero
+INFO:root:RESTARTED
+WARNING:root:Device Waschmaschiene failed with error division by zero

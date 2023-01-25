@@ -12,6 +12,30 @@ MESSAGES = {
     "went_online": "{name} succeeded again after {off_since} fails and was marked as online"
 }
 
+def nested_mapped(map: dict):
+    def wrapper(func: typing.Callable):
+        def decorator(*args, **kwargs):
+            try:
+                result = func(*args, **kwargs)
+                if failed(result):
+                    return result
+                return result
+            except Exception as e:
+                if type(e) in map:
+                    return WatchHenFailed(map[type(e)])
+                return WatchHenFailed(e)
+        return decorator
+    return wrapper
+
+
+def nested(func: typing.Callable):
+    def decorator(*args, **kwargs):
+        try:
+            result = func(*args, **kwargs)
+        except Exception as e:
+            return WatchHenFailed(e)
+    return decorator
+
 def failed(obj: object):
     return isinstance(obj, WatchHenFailed)
 

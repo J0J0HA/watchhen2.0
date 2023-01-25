@@ -10,3 +10,9 @@ ERROR:root:Device Waschmaschiene failed with error 1 multiple times and was mark
 INFO:root:Device Waschmaschiene now fails with error 2 after failing 6 times with error 1
 INFO:root:Device Waschmaschiene now fails with error This is a test after failing 9 times with error 2
 INFO:root:Device Waschmaschiene succeeded again after 10 fails and was marked as online
+INFO:root:RESTARTED
+WARNING:root:Device Waschmaschiene failed with error 1
+ERROR:root:Device Waschmaschiene failed with error 1 multiple times and was marked as offline
+INFO:root:Device Waschmaschiene now fails with error 2 after failing 6 times with error 1
+INFO:root:Device Waschmaschiene now fails with error This is a test after failing 9 times with error 2
+INFO:root:Device Waschmaschiene succeeded again after 10 fails and was marked as online
